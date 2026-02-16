@@ -12,6 +12,8 @@ img.onclick = function(){
 
 var span = document.getElementsByClassName("close")[0];
 
-span.onclick = function(){
+function closeImage(){
     modal.style.display = "none";
 }
+
+span.addEventListener("click", closeImage);
